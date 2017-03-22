@@ -84,7 +84,7 @@ Mit dem Konstruktor public erstellen wir eine Welt-Klasse namens space_backround
 In dieser Zeile steht ein Semikolon, das verschiedene Methoden voneinander trennt. 
 Ein Hintergrund der Welt war durch das Downloaden von Ants1 schon vorgegeben und passt zum Ameisen-Szenario, sodass wir diesen nicht verändern mussten. Durch setPaintOrder können wir die Farbgebungsaufträge der Welt und der Ants Klasse aufnehmen. Außerdem erstellen wir mit scenario 1() ein neues Szenario für die Welt, in welchem die Objekte zu Beginn hinzugefügt werden.
 
-Code-Script 1.1
+```javascript
 
 import greenfoot.*;
 
@@ -97,12 +97,13 @@ public static final int WORLDSIZE = 640;
         scenario1();
     }
     }
+```
 
 2.1.2 Objekte in der Welt
 
 Bisher enthält unsere Welt noch keine Objekte, die agieren können und für unser Spiel relevant sind. Wir benötigen in jedem Fall zunächst eine Creature, Ants, AntHill, Pheromon und Food-Klasse. Da die Ameisen immer aus ihrem Ameisenhügel spawnen sollen, legen wir die Koordinaten der Ameisenhügel mithilfe des Befehls addObject fest. Die Methode addObject benötigt bestimmte Parameter für ihre Funktionalität. Zu diesen zählt zum Einen die Bezeichnung des zu generierenden Objektes einer Klasse und seine Position in der Welt. Hierzu wird nach addObject in Klammern die jeweilige Klasse mit dem Aufdruck new davor genannt, welcher als Referenz festlegt, dass ein Objekt dieser Klasse hinzugefügt werden soll. Schließlich geben zwei Parameter, durch Kommata getrennt, die Koordinaten des jeweiligen Objekts an. Diese Koordinaten haben wir so gewählt, dass die Ameisenhügel jeweils ein bisschen auseinander liegen. Außerdem sollen zu Beginn Futterhaufen für die Ameisen vorhanden sein. Diese haben wir so gewählt, dass sie etwas auseinander und auf der ganzen Karte verteilt liegen. Es sollten außerdem nicht zu wenige Futterhaufen sein, da die Ameisen diese sonst zu schnell leeren.
 
-Code-Script 1.2
+```javascript
 
 import greenfoot.*;
 public void scenario1()
@@ -120,3 +121,4 @@ public void scenario1()
         addObject(new Food(), 400, 550);
         addObject(new Food(), 550, 500);
     }
+```
