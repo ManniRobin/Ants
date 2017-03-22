@@ -122,3 +122,36 @@ public void scenario1()
         addObject(new Food(), 550, 500);
     }
 ```
+
+<p>
+Zusammengefasst ergibt sich für die World-Klasse:
+</p>
+
+
+```javascript
+import greenfoot.*;
+
+public static final int WORLDSIZE = 640;
+public AntWorld()
+    {
+        super(WORLDSIZE, WORLDSIZE, 1,false);
+        setPaintOrder(AntWorld.class, Ant.class);
+        scenario1();
+    }
+    public void scenario1()
+    {
+        addObject(new AntHill(), WORLDSIZE / 2, WORLDSIZE / 2);
+        addObject(new AntHill(), WORLDSIZE / 4, WORLDSIZE / 4);
+        addObject(new Food(), 200, 200);
+        addObject(new Food(), 50, 50);
+        addObject(new Food(), 300, 50);
+        addObject(new Food(), 500, 200);
+        addObject(new Food(), 300, 275);
+        addObject(new Food(), 300, 350);
+        addObject(new Food(), 350, 400);
+        addObject(new Food(), 150, 400);
+        addObject(new Food(), 400, 550);
+        addObject(new Food(), 550, 500);
+        }
+        ```
+  
