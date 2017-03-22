@@ -12,7 +12,6 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         <li><a href= "#Das Spiel und die Dokumentation"> 1.1 Das Spiel und die Dokumentation</a></li>
         <li><a href= "#Snytax und Funktionsweise von Java"> 1.2 Snytax und Funktionsweise von Java</a></li>
         </ul>
-    
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
     <li><a href= "#Das Szenario"> 2.1 Das Szenario</a></li>
