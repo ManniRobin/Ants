@@ -189,7 +189,9 @@ public AntWorld()
 <a id= "Die Counter-Klasse"> 2.7 Die Counter-Klasse</a>
 </h3>
 
-4. Quellen
+<h3>
+<a id= "Quellen"> 3. Quellen</a>
+</h3>
 
 - Michael Kölling: *Einführung in Java mit Greenfoot*. Pearson Education Deutschland GmbH, 2010
 - Download: Greenfoot AntsProject
