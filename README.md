@@ -154,7 +154,8 @@ public AntWorld()
         addObject(new Food(), 400, 550);
         addObject(new Food(), 550, 500);
         }
-        ```
+       
+```
  
  <h3>
 <a id= "Die Creature-Klasse"> 2.2 Die Creature-Klasse</a>
