@@ -21,15 +21,15 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         </ul>
     <li><a href= "#Die Creature-Klasse"> 2.2 Die Creature-Klasse</a></li>
         <ul>
-        <li><a href= "#Code-Zusammenfassung Rakete"> 2.2.1 Code-Zusammenfassung</a></li>
+        <li><a href= "#Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a></li>
     <li><a href= "#Die Ants-Klasse"> 2.3 Die Ants-Klasse</a></li>
         <ul>
-        <li><a href= "#Code-Zusammenfassung Asteroiden"> 2.3.5 Code-Zusammenfassung</a></li>
+        <li><a href= "#Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a></li>
         </ul>
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
     <li><a href= "#Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
-    <li><a href= "#Die Counter-Klasse"> 2.6 Die Counter-Klasse</a></li>
+    <li><a href= "#Die Counter-Klasse"> 2.7 Die Counter-Klasse</a></li>
     </ul>
 <li><a href= "#Quellen"> 3. Quellen</a></li>
 </ul>
@@ -82,7 +82,7 @@ Wir programmieren unser Projekt "Ants" in der Programmierumgebung "Greenfoot", d
 
 Mit dem Konstruktor public erstellen wir eine Welt-Klasse namens space_backround_1 und durch die Methode import greenfoot.*; geben wir an, dass diese Klasse in das Szenario implementiert werden soll. Fehlt diese Methode oder wird sie verändert, so würde diese Klasse beim Start des Programmes nicht geladen werden. Hinter jeder Klasse stehen mindestens eine geöffnete und eine geschlossene Klammer, die zusätzliche Parameter enthalten können. Zur Ausführung der Methoden, die wir verwenden, sind keine weiteren Parameter notwendig, weswegen bei uns nichts zwischen den Klammern steht. Die Referenz super sorgt dafür, dass alle Eigenschaften der Super- oder Hauptklasse auf alle anderen Klassen übertragen werden. In diesem Fall ist die Super-Klasse die generierte Welt. Diese Anweisung benötigt weitere Parameter für ihre Funktionalität und zwar die Auflösung der generierten Welt und das Verhältnis zwischen Pixeln und Zellen des Zellen-Koordinatensystems, das deckungsgleich zur generierten Welt erstellt wird. Wir wollen dieses Verhältnis auf 1:1 festlegen, sodass eine Zelle einem Pixel entspricht. Um diese Parameter dem Konstruktor zur Verfügung zu stellen, schreiben wir nach super in Klammern (640, 640, 1, true). Der erste Parameter definiert die Anzahl der Pixel entlang der x-Achse, der zweite nach dem Komma die Pixelanzahl in y-Richtung und der dritte Parameter "1" sagt aus, dass eine Zelle die Größe von einem Pixel in x- und y- Richtung besitzt. Das Größenverhältnis zwischen Zellen und Pixeln beträgt also 1:1. Wir haben aber nicht die Koordinaten 640 benutzt, sondern eine feste Größe der Welt (WORLDSIZE) auf 640 festgelegt, die wir später weiter verwendet haben. Durch den Parameter true erreichen wir, dass die Asteroiden und auch die Rakete zunächst nicht aus der Welt verschwinden können, da die Grenzen der Welt für sie eine Barriere darstellen. 
 In dieser Zeile steht ein Semikolon, das verschiedene Methoden voneinander trennt. 
-Ein Hintergrund der Welt war durch das Downloaden von Ants1 schon vorgegeben und passt zum Ameisen-Szenario, sodass wir diesen nicht verändern mussten. Durch setPaintOrder können wir die Farbgebungsaufträge der Welt und der Ants Klasse aufnehmen. Außerdem erstellen wir mit scenario 1() ein neues Szenario für die Welt, in welchem die Objekte zu Beginn hinzugefügt werden.
+Ein Hintergrund der Welt war durch das Downloaden von Greenfoot Ants Project auf der Greenfoot Website schon vorgegeben und passt zum Ameisen-Szenario, sodass wir diesen nicht verändern mussten. Durch setPaintOrder können wir die Farbgebungsaufträge der Welt und der Ants Klasse aufnehmen. Außerdem erstellen wir mit scenario 1() ein neues Szenario für die Welt, in welchem die Objekte zu Beginn hinzugefügt werden.
 
 ```javascript
 
@@ -154,4 +154,40 @@ public AntWorld()
         addObject(new Food(), 550, 500);
         }
         ```
-  
+ 
+ <h3>
+<a id= "Die Creature-Klasse"> 2.2 Die Creature-Klasse</a>
+</h3>
+
+<h4>
+<a id="Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a>
+</h4>
+
+<h3>
+<a id= "Die Ants-Klasse"> 2.3 Die Ants-Klasse</a>
+</h3>
+
+<h4>
+<a id="Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a>
+</h4>
+
+<h3>
+<a id= "Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a>
+</h3>
+
+<h3>
+<a id= "Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a>
+</h3>
+
+<h3>
+<a id= "Die Food-Klasse"> 2.6 Die Food-Klasse</a>
+</h3>
+
+<h3>
+<a id= "Die Counter-Klasse"> 2.7 Die Counter-Klasse</a>
+</h3>
+
+4. Quellen
+
+- Michael Kölling: *Einführung in Java mit Greenfoot*. Pearson Education Deutschland GmbH, 2010
+- Download: Greenfoot AntsProject
