@@ -33,7 +33,8 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
     <li><a href= "#Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
     </ul>
-<li><a href= "#Quellen"> 3. Quellen</a></li>
+    <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
+<li><a href= "#Quellen"> 4. Quellen</a></li>
 </ul>
 
 <h2>
@@ -201,7 +202,11 @@ public AntWorld()
 <p><img src="images/Food.png" alt="food"></p>
 
 <h3>
-<a id= "Quellen"> 3. Quellen</a>
+<a id= "Stundenübersicht"> 3. Stundenübersicht</a>
+</h3>
+
+<h3>
+<a id= "Quellen"> 4. Quellen</a>
 </h3>
 
 - Michael Kölling: *Einführung in Java mit Greenfoot*. Pearson Education Deutschland GmbH, 2010
