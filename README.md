@@ -14,24 +14,23 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         </ul>
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
-    <li><a href= "#Das Szenario"> 2.1 Das Szenario</a></li>
-        <ul>
-        <li><a href= "#Erstellen einer Welt"> 2.1.1 Erstellen einer Welt</a></li>
-        <li><a href= "#Objekte in der Welt"> 2.1.2 Objekte in der Welt</a></li>
-        </ul>
-    <li><a href= "#Die Creature-Klasse"> 2.2 Die Creature-Klasse</a></li>
-        <ul>
-        <li><a href= "#Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a></li>
-    <li><a href= "#Die Ants-Klasse"> 2.3 Die Ants-Klasse</a></li>
-        <ul>
-        <li><a href= "#Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a></li>
-        </ul>
+        <li><a href= "#Das Szenario"> 2.1 Das Szenario</a></li>
+           <ul>
+           <li><a href= "#Erstellen einer Welt"> 2.1.1 Erstellen einer Welt</a></li>
+           <li><a href= "#Objekte in der Welt"> 2.1.2 Objekte in der Welt</a></li>
+           </ul>
+        <li><a href= "#Die Creature-Klasse"> 2.2 Die Creature-Klasse</a></li>
+           <ul>
+           <li><a href= "#Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a></li>
+           </ul>
+        <li><a href= "#Die Ants-Klasse"> 2.3 Die Ants-Klasse</a></li>
+           <ul>
+           <li><a href= "#Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a></li>
+           </ul>
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
     <li><a href= "#Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
     </ul>
-
-<ul>
 <li><a href= "#Quellen"> 3. Quellen</a></li>
 </ul>
 
