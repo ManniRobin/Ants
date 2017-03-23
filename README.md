@@ -251,15 +251,19 @@ Die Doppelstunde haben wir genutzt, um die Food-Klasse zu programmieren. Dabei h
 Sonntag, den 19.03.2017:
 </h4>
 
-
+Bisher können die Ameisen das Futter aufnehmen und dann ihre Farbe verändern, aber nicht zu ihrem Zuhause, dem Ameisenhaufen, zurückkehren. Dieses Problem haben wir am Wochenende gelöst und konnten dann auch zwei Screenshots, einen beim Start und einem mitten im Spiel, aufnehmen und in die Dokumentation einfügen.
 
 <h4>
 Dienstag, den 21.03.2017:
 </h4>
 
+Wir haben die Zeit genutzt, um eine Github-Pages Datei zu erstellen und anschließend unser Projekt auf Github Pages hochzuladen und einen bestimmten Hintergrund auszuwählen. Dazu war es auch notwendig, die Codes dementsprechend zu fragmentieren.
+
 <h4>
 Mittwoch, den 22.03.2017:
 </h4>
+
+Zwar funktionierte das Projekt ganz gut, jedoch hatten wir immernoch ein Problem: Die Ameisen sind, wenn sie Futter gefunden haben und zum Ameisenhaufen zurückgekehrt sind, nicht erneut auf Futtersuche gegangen, aber eigentlich 
 
 <h4>
 Donnerstag, den 23.03.2017: 
