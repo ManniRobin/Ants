@@ -174,6 +174,10 @@ public AntWorld()
 <a id= "Die Ants-Klasse"> 2.3 Die Ants-Klasse</a>
 </h3>
 
+<p><img src="images/ant.gif" alt="ant"></p>
+
+<p><img src="images/ant-with-food.gif" alt="Ant with food"></p>
+
 <h4>
 <a id="Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a>
 </h4>
@@ -182,13 +186,19 @@ public AntWorld()
 <a id= "Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a>
 </h3>
 
+<p><img src="images/anthill.png" alt="anthill"></p>
+
 <h3>
 <a id= "Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a>
 </h3>
 
+<p><img src="images/Pheromone.png" alt="Pheromone"></p>
+
 <h3>
 <a id= "Die Food-Klasse"> 2.6 Die Food-Klasse</a>
 </h3>
+
+<p><img src="images/Food.png" alt="food"></p>
 
 <h3>
 <a id= "Quellen"> 3. Quellen</a>
