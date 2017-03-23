@@ -29,7 +29,6 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
     <li><a href= "#Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
-    <li><a href= "#Die Counter-Klasse"> 2.7 Die Counter-Klasse</a></li>
     </ul>
 
 <li><a href= "#Quellen"> 3. Quellen</a></li>
@@ -183,10 +182,6 @@ public AntWorld()
 
 <h3>
 <a id= "Die Food-Klasse"> 2.6 Die Food-Klasse</a>
-</h3>
-
-<h3>
-<a id= "Die Counter-Klasse"> 2.7 Die Counter-Klasse</a>
 </h3>
 
 <h3>
