@@ -31,6 +31,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
     <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
     </ul>
 
+<ul>
 <li><a href= "#Quellen"> 3. Quellen</a></li>
 </ul>
 
