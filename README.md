@@ -205,6 +205,58 @@ public AntWorld()
 <a id= "Stundenübersicht"> 3. Stundenübersicht</a>
 </h3>
 
+<h4>
+Donnerstag, den 23.02.2017:
+</h4>
+
+An diesem Tag haben wir nach der 2.Abgabe das Spiel SpaceRocket abgeschlossen und haben festgestellt, dass wir in Zukunft gerne ein neues Projekt für den letzten verbleibenden Monat beginnen möchten, welches am besten nicht zu umfangreich ist, damit es auch in ca. 3 Wochen zu schaffen ist.
+
+<h4>
+Mittwoch, den 01.03.2017:
+</h4>
+
+Wir haben erste Ideen entwickelt und haben uns durch das Greenfootbuch von Michael Kölling, vor allem Kapitel 9, inspirieren lassen. Wir mussten uns zwischen dem Ameisenprojekt und einem Projekt namens Boids, welches das Schwarmverhalten von Vögeln simuliert, entscheiden. Dazu haben wir uns im Greenfootbuch die notwendigen Seiten durchgelesen und uns anschließend wir das aus unserer Sicht biologisch und programmiertechnisch ansprechendere, aber gleichzeitig nicht zu zeitaufwendige Ameisen-Projekt entschieden.
+
+<h4>
+Donnerstag, den 02.03.2017:
+</h4>
+
+Zu Beginn haben wir erst einmal das Projekt Greenfoot Ants Project von der Greenfoot Website heruntergeladen.
+Die übrige Zeit haben wir genutzt, um zunächst das Projekt zu verstehen: Die Ameisen spawnen immer nur aus zwei bestimmten Ameisenhaufen, die sich immer an den gleichen Stellen befinden. Sie bewegen sich auf der Suche nach Futter zufällig und können rotieren. Wenn sie Futter gefunden haben, sollen sie ein paar Krümel essen, die Farbe verändern und auf dem Weg zu ihrem Zuhause, dem Ameisenhügel, Pheromone ausstoßen, die andere Ameisen wahrnehmen und den Pheromonen schließlich folgen. Dies hörte sich erst einmal ziemlich kompliziert an. Wir versuchten, erst einmal die Welt-Klasse Antworld zu verstehen und haben zusätzlich zu zwei Ameisenhaufen noch 10 Plätze für das Futter auf verschiedenen Punkten der Welt hinzugefügt.
+
+<h4>
+Mittwoch, den 08.03.2017:
+</h4>
+
+<h4>
+Donnerstag, den 09.03.2017:
+</h4>
+
+<h4>
+Samstag, den 11.03.2017:
+</h4>
+
+<h4>
+Dienstag, den 14.03.2017:
+</h4>
+
+<h4>
+Donnerstag, den 16.03.2017:
+</h4>
+
+<h4>
+Sonntag, den 19.03.2017:
+</h4>
+
+<h4>
+Dienstag, den 21.03.2017:
+</h4>
+
+<h4>
+Donnerstag, den 23.03.2017: 
+</h4>
+
+
 <h3>
 <a id= "Quellen"> 4. Quellen</a>
 </h3>
