@@ -87,16 +87,83 @@ Anweisung
 
 <table>
     <tr>
-    <th>Methode</th>
     <th>Rückgabetyp</th>
-    <th>Funktion</th>
+    <th>Methode</th>
+    <th>(</th>
     <th>Parameter</th>
+    <th>)</th>
+    <th>Funktion</th>
     </tr>
     <tr>
-    <td>super</td>
-    <td></td>
+    <td>super()</td>
+    <td>void</td>
     <td>Definiert die Welt-Klasse als Hauptklasse des Szenarios und legt dessen Größe in Pixeln fest</td>
     <td>Abmessungen des Szenarios in Pixeln in x- und y-Richtung (x, y)</td>
+    </tr>
+    <tr>
+    <td>addObject()</td>
+    <td>void</td>
+    <td>fügt ein Objekt einer bestimmten Klasse in die Welt hinzu</td>
+    <td>Koordianten des Obejektes, dass hinzugfügt werden soll (int x, int y)</td>
+    </tr>
+    <tr>
+    <td>act()</td>
+    <td>void</td>
+    <td>wird ständig ausgeführt, solange der "Run"-Botton in Greenfoot betätigt wird</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>getWorld</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>move()</td>
+    <td>void</td>
+    <td>Bewegt, abhängig von ihrem Parameter, ein Objekt einer Klasse entlang seiner Ausrichungsachse</td>
+    <td>Ganzzahlige Zahl deren Betrag das Tempo und dessen Vorzeichen die Richtung bestimmt.</td>
+    </tr>
+    <tr>
+    <td>if(</td>
+    <td>void</td>
+    <td>führt den nachfolgenen Schleifenrumpf { ... } nur aus, wenn alle Bedingungsparameer erfüllt sind</td>
+    <td>Bedingungsparameter</td>
+    </tr>
+    <tr>
+    <td>else</td>
+    <td>void</td>
+    <td>sind die Bedingungen einer if-Methode nicht erfüllt, werden stattdessen die Methoden im Schleifenrumpf der else-Methode ausgeführt</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>setImage</td>
+    <td>void</td>
+    <td>legt die Bilddabei eines bestimmten Objektes fest</td>
+    <td>Dateiname der Bilddatei</td>
+    </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</table>
+
+<table>
+    <tr>
+    <th>Rückgabetyp</th>
+    <th>Methode</th>
+    <th>(</th>
+    <th>Parameter</th>
+    <th>)</th>
+    <th>Funktion</th>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>if</td>
+    <td>(</td>
+    <td>Bedingungsparameter</td>
+    <td>)</td>
+    <td>führt den nachfolgenen Schleifenrumpf { ... } nur aus, wenn alle Bedingungsparameer erfüllt sind</td>
     </tr>
 </table>
 
