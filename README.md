@@ -6,7 +6,7 @@ Ants
 Ein Informatik-Projekt von Robin Wagner und Finn Westphal
 </h2>
 
-<p><img src="Ants/Screenshot(1).png" alt="Screenshot1"></p>
+<p><img src="images/Screenshot (1).png" alt="Screenshot1"></p>
 
 <ul>
     <li><a href= "#Einleitung"> 1. Einleitung: Anforderungen und Elemente des Spiels</a></li>
@@ -41,6 +41,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
 </h2>
 
 Ants ist ein biologisch faszinierendes Greenfoot-Projekt. Ameisen kommen aus Ameisenhügeln nach und nach heraus und suchen nach Futterhaufen. Wenn sie Futter gefunden haben, essen sie ein paar Krümel vom ganzen Futterhaufen und kehren zurück zu ihrem Zuhause, dem Ameisenhügel. Wenn die Ameisen Futter gefunden haben hinterlassen sie Spuren (Pheromone) auf ihrem Heimweg, die andere Ameisen erkennen und denen sie folgen. Ansonsten bewegen sich die Ameisen recht naturecht mit unterschiedlicher Geschwindigkeit und können oft ihre Ausrichtung ändern. 
+
 
 
 <p>		
