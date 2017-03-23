@@ -95,67 +95,44 @@ Anweisung
     <th>Funktion</th>
     </tr>
     <tr>
-    <td>super()</td>
     <td>void</td>
-    <td>Definiert die Welt-Klasse als Hauptklasse des Szenarios und legt dessen Größe in Pixeln fest</td>
-    <td>Abmessungen des Szenarios in Pixeln in x- und y-Richtung (x, y)</td>
-    </tr>
-    <tr>
-    <td>addObject()</td>
-    <td>void</td>
-    <td>fügt ein Objekt einer bestimmten Klasse in die Welt hinzu</td>
-    <td>Koordianten des Obejektes, dass hinzugfügt werden soll (int x, int y)</td>
-    </tr>
-    <tr>
-    <td>act()</td>
-    <td>void</td>
-    <td>wird ständig ausgeführt, solange der "Run"-Botton in Greenfoot betätigt wird</td>
-    <td></td>
-    </tr>
-    <tr>
-    <td>getWorld</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-    <tr>
-    <td>move()</td>
-    <td>void</td>
-    <td>Bewegt, abhängig von ihrem Parameter, ein Objekt einer Klasse entlang seiner Ausrichungsachse</td>
-    <td>Ganzzahlige Zahl deren Betrag das Tempo und dessen Vorzeichen die Richtung bestimmt.</td>
-    </tr>
-    <tr>
-    <td>if(</td>
-    <td>void</td>
-    <td>führt den nachfolgenen Schleifenrumpf { ... } nur aus, wenn alle Bedingungsparameer erfüllt sind</td>
-    <td>Bedingungsparameter</td>
-    </tr>
-    <tr>
-    <td>else</td>
-    <td>void</td>
-    <td>sind die Bedingungen einer if-Methode nicht erfüllt, werden stattdessen die Methoden im Schleifenrumpf der else-Methode ausgeführt</td>
-    <td></td>
-    </tr>
-    <tr>
-    <td>setImage</td>
-    <td>void</td>
-    <td>legt die Bilddabei eines bestimmten Objektes fest</td>
-    <td>Dateiname der Bilddatei</td>
-    </tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</table>
-
-<table>
-    <tr>
-    <th>Rückgabetyp</th>
-    <th>Methode</th>
+    <td>super</td>
     <th>(</th>
-    <th>Parameter</th>
+    <td>Abmessungen des Szenarios in Pixeln in x- und y-Richtung (x, y)</td>
     <th>)</th>
-    <th>Funktion</th>
+    <td>Definiert die Welt-Klasse als Hauptklasse des Szenarios und legt dessen Größe in Pixeln fest</td>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>addObject()</td>
+    <th>(</th>
+    <td>Koordianten des Obejektes, dass hinzugfügt werden soll (int x, int y)</td>
+    <th>)</th>
+    <td>fügt ein Objekt einer bestimmten Klasse in die Welt hinzu</td>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>act</td>
+    <th>(</th>
+    <td></td>
+    <th>)</th>
+    <td>wird ständig ausgeführt, solange der "Run"-Botton in Greenfoot betätigt wird</td>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>getWorld</td>
+    <td>(</td>
+    <td></td>
+    <td>)</td>
+    <td>ruft Methoden ab, die nur in der Weltklasse ausgeführt werden können</td>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>move</td>
+    <td>(</td>
+    <td>Ganzzahlige Zahl deren Betrag das Tempo und dessen Vorzeichen die Richtung bestimmt.</td>
+    <td>)</td>
+    <td>Bewegt, abhängig von ihrem Parameter, ein Objekt einer Klasse entlang seiner Ausrichungsachse</td>
     </tr>
     <tr>
     <td>void</td>
@@ -165,8 +142,29 @@ Anweisung
     <td>)</td>
     <td>führt den nachfolgenen Schleifenrumpf { ... } nur aus, wenn alle Bedingungsparameer erfüllt sind</td>
     </tr>
+    <tr>
+    <td>void</td>
+    <td>else</td>
+    <td>(</td>
+    <td></td>
+    <td>)</td>
+    <td>sind die Bedingungen einer if-Methode nicht erfüllt, werden stattdessen die Methoden im Schleifenrumpf der else-Methode ausgeführt</td>
+    </tr>
+    <tr>
+    <td>void</td>
+    <td>setImage</td>
+    <td>(</td>
+    <td>Dateiname der Bilddatei</td>
+    <td>)</td>
+    <td>legt die Bilddabei eines bestimmten Objektes fest</td>
+    </tr>
+    <td>void</td>
+    <td>while</td>
+    <td>(</td>
+    <td>Bedingungsparameter
+    <td>)</td>
+    <td>führt Methoden in folgenden Methodenrumpf solange aus, solange die Bedingunsparameter erfüllt sind</td>
 </table>
-
 
 Wir programmieren unser Projekt "<i>Ants</i>" in der Programmierumgebung "Greenfoot", die auf der objektorientierten Programmiersprache Java basiert. Zunächst haben wir festgelegt, welche Größe, welches Format und welche Auflösung unsere Welt haben soll. Unser Spiel soll über eine klassische Auflösung und ein klassisches Seitenverhälnis verfügen, damit es auf jedem Computer spielbar ist. Wir haben uns deswegen für das Seitenverhältis von 1/1 und eine Auflösung von 640 * 640 Pixeln entschieden. Diese Bildeigenschaften sind von den meisten aktuellen Displays umsetzbar.
 
