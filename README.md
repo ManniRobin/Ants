@@ -98,9 +98,9 @@ Anweisung
     <td>void</td>
     <td>super</td>
     <th>(</th>
-    <td>Abmessungen des Szenarios in Pixeln in x- und y-Richtung (x, y)</td>
+    <td>Abmessungen des Szenarios in Pixeln in x- und y-Richtung ein boolscher Literal (x, y)</td>
     <th>)</th>
-    <td>Definiert die Welt-Klasse als Hauptklasse des Szenarios und legt dessen Größe in Pixeln fest</td>
+    <td>Definiert die Welt-Klasse als Hauptklasse des Szenarios und legt dessen Größe in Pixeln und durch einen weiteren booleschen Literal fest, dass die minimalen bzw. die maximalen Koordinaten des Szenarios Grenzen für die Objekte in der Welt darstellen</td>
     </tr>
     <tr>
     <td>void</td>
@@ -166,7 +166,7 @@ Anweisung
     <td>führt Methoden in folgenden Methodenrumpf solange aus, solange die Bedingunsparameter erfüllt sind</td>
 </table>
 
-Wir programmieren unser Projekt "<i>Ants</i>" in der Programmierumgebung "Greenfoot", die auf der objektorientierten Programmiersprache Java basiert. Zunächst haben wir festgelegt, welche Größe, welches Format und welche Auflösung unsere Welt haben soll. Unser Spiel soll über eine klassische Auflösung und ein klassisches Seitenverhälnis verfügen, damit es auf jedem Computer spielbar ist. Wir haben uns deswegen für das Seitenverhältis von 1/1 und eine Auflösung von 640 * 640 Pixeln entschieden. Diese Bildeigenschaften sind von den meisten aktuellen Displays umsetzbar.
+Wir programmieren unser Projekt "<i>Ants</i>" in der Programmierumgebung "Greenfoot", die auf der objektorientierten Programmiersprache Java basiert. Zunächst haben wir festgelegt, welche Größe, welches Format und welche Auflösung unsere Welt haben soll. Unsere Simulation soll über eine klassische Auflösung und ein klassisches Seitenverhälnis verfügen, damit es auf jedem Computer spielbar ist. Wir haben uns deswegen für das Seitenverhältis von 1/1 und eine Auflösung von 640 * 640 Pixeln entschieden. Diese Bildeigenschaften sind von den meisten aktuellen Displays umsetzbar.
 
 <h2>
 <a id="Umsetzung"> 2. Umsetzung</a>
@@ -177,11 +177,13 @@ Wir programmieren unser Projekt "<i>Ants</i>" in der Programmierumgebung "Greenf
 </h3>
 
 
-2.1.1 Erstellen einer Welt
+<h4>
+<a id= "Erstellen einer Welt"> 2.1.1 Erstellen einer Welt</a>
+</h4>
 
-Mit dem Konstruktor <i>public</i> erstellen wir eine Welt-Klasse namens space_backround_1 und durch die Methode <i>import greenfoot.*; </i> geben wir an, dass diese Klasse in das Szenario implementiert werden soll. Fehlt diese Methode oder wird sie verändert, so würde diese Klasse beim Start des Programmes nicht geladen werden. Hinter jeder Klasse stehen mindestens eine geöffnete und eine geschlossene Klammer, die zusätzliche Parameter enthalten können. Zur Ausführung der Methoden, die wir verwenden, sind keine weiteren Parameter notwendig, weswegen bei uns nichts zwischen den Klammern steht. Die Referenz super sorgt dafür, dass alle Eigenschaften der Super- oder Hauptklasse auf alle anderen Klassen übertragen werden. In diesem Fall ist die Super-Klasse die generierte Welt. Diese Anweisung benötigt weitere Parameter für ihre Funktionalität und zwar die Auflösung der generierten Welt und das Verhältnis zwischen Pixeln und Zellen des Zellen-Koordinatensystems, das deckungsgleich zur generierten Welt erstellt wird. Wir wollen dieses Verhältnis auf 1:1 festlegen, sodass eine Zelle einem Pixel entspricht. Um diese Parameter dem Konstruktor zur Verfügung zu stellen, schreiben wir nach super in Klammern (640, 640, 1, true). Der erste Parameter definiert die Anzahl der Pixel entlang der x-Achse, der zweite nach dem Komma die Pixelanzahl in y-Richtung und der dritte Parameter "1" sagt aus, dass eine Zelle die Größe von einem Pixel in x- und y- Richtung besitzt. Das Größenverhältnis zwischen Zellen und Pixeln beträgt also 1:1. Wir haben aber nicht die Koordinaten 640 benutzt, sondern eine feste Größe der Welt (WORLDSIZE) auf 640 festgelegt, die wir später weiter verwendet haben. Durch den Parameter true erreichen wir, dass die Asteroiden und auch die Rakete zunächst nicht aus der Welt verschwinden können, da die Grenzen der Welt für sie eine Barriere darstellen.
+Mit dem Konstruktor <i>public</i> erstellen wir eine Welt-Klasse namens AntWorld und durch die Methode <i>import greenfoot.*; </i> geben wir an, dass diese Klasse in das Szenario implementiert werden soll. Fehlt diese Methode oder wird sie verändert, so würde diese Klasse beim Start des Programmes nicht geladen werden. Hinter jeder Klasse stehen mindestens eine geöffnete und eine geschlossene Klammer, die zusätzliche Parameter enthalten können. Die Referenz <i>super</i> sorgt dafür, dass alle Eigenschaften der Super- oder Hauptklasse auf alle anderen Klassen übertragen werden. In diesem Fall ist die Super-Klasse die generierte Welt. Diese Anweisung benötigt weitere Parameter für ihre Funktionalität und zwar die Auflösung der generierten Welt und das Verhältnis zwischen Pixeln und Zellen des Zellen-Koordinatensystems, das deckungsgleich zur generierten Welt erstellt wird. Wir wollen dieses Verhältnis auf 1:1 festlegen, sodass eine Zelle einem Pixel entspricht. Um diese Parameter dem Konstruktor zur Verfügung zu stellen, schreiben wir nach super in Klammern (640, 640, 1, true). Der erste Parameter definiert die Anzahl der Pixel entlang der x-Achse, der zweite nach dem Komma die Pixelanzahl in y-Richtung und der dritte Parameter "1" sagt aus, dass eine Zelle die Größe von einem Pixel in x- und y- Richtung besitzt. Das Größenverhältnis zwischen Zellen und Pixeln beträgt also 1:1. Wir haben aber nicht die Koordinaten 640 benutzt, sondern eine feste Größe der Welt durch die Variable <i>WORLDSIZE</i> auf 640 festgelegt, die wir später weiter verwendet haben. Durch den Parameter <i>true</i> erreichen wir, dass die Asteroiden und auch die Rakete zunächst nicht aus der Welt verschwinden können, da die Grenzen der Welt für sie eine Barriere darstellen.
 In dieser Zeile steht ein Semikolon, das verschiedene Methoden voneinander trennt. 
-Ein Hintergrund der Welt war durch das Downloaden von Greenfoot Ants Project auf der Greenfoot Website schon vorgegeben und passt zum Ameisen-Szenario, sodass wir diesen nicht verändern mussten. Durch setPaintOrder können wir die Farbgebungsaufträge der Welt und der Ants Klasse aufnehmen. Außerdem erstellen wir mit scenario 1() ein neues Szenario für die Welt, in welchem die Objekte zu Beginn hinzugefügt werden.
+Ein Hintergrund der Welt war durch das Herunterladen von Greenfoot Ants Project auf der Greenfoot Website schon vorgegeben und passt zum Ameisen-Szenario, sodass wir diesen nicht verändern mussten. Durch die Methode <i>setPaintOrder</i> können wir die Farbgebungsaufträge der Welt und der Ants Klasse aufnehmen. Die Reihenfolge der Parameter legt fest, welche Objekte in der Welt bei Überschneidung in den Hinergrund rücken. In unserem Fall rückt die AntHill-Klasse in den Hintergrund der Ant-Klasse. Außerdem wird hier eine von uns erstllte Methode <i>scenario1()</i> aufgerufen.
 
 ```javascript
 
@@ -192,7 +194,7 @@ public static final int WORLDSIZE = 640;
      public AntWorld()
     {
         super(WORLDSIZE, WORLDSIZE, 1,false);
-        setPaintOrder(AntWorld.class, Ant.class);
+        setPaintOrder(Ant.class, AntHill.class);
         scenario1();
     }
     }
@@ -200,9 +202,11 @@ public static final int WORLDSIZE = 640;
 
 <p><img src="images/sand.jpg" alt="sand world"></p>
 
-2.1.2 Objekte in der Welt
+<h4>
+<a id= "Objekte in der Welt">2.1.2 Objekte in der Welt</a>
+</h4>
 
-Bisher enthält unsere Welt noch keine Objekte, die agieren können und für unser Spiel relevant sind. Wir benötigen in jedem Fall zunächst eine Creature, Ants, AntHill, Pheromon und Food-Klasse. Da die Ameisen immer aus ihrem Ameisenhügel spawnen sollen, legen wir die Koordinaten der Ameisenhügel mithilfe des Befehls addObject fest. Die Methode addObject benötigt bestimmte Parameter für ihre Funktionalität. Zu diesen zählt zum Einen die Bezeichnung des zu generierenden Objektes einer Klasse und seine Position in der Welt. Hierzu wird nach addObject in Klammern die jeweilige Klasse mit dem Aufdruck new davor genannt, welcher als Referenz festlegt, dass ein Objekt dieser Klasse hinzugefügt werden soll. Schließlich geben zwei Parameter, durch Kommata getrennt, die Koordinaten des jeweiligen Objekts an. Diese Koordinaten haben wir so gewählt, dass die Ameisenhügel jeweils ein bisschen auseinander liegen. Außerdem sollen zu Beginn Futterhaufen für die Ameisen vorhanden sein. Diese haben wir so gewählt, dass sie etwas auseinander und auf der ganzen Karte verteilt liegen. Es sollten außerdem nicht zu wenige Futterhaufen sein, da die Ameisen diese sonst zu schnell leeren.
+Bisher enthält unsere Welt noch keine Objekte, die agieren können und für unser Spiel relevant sind. Wir benötigen in jedem Fall zunächst eine <i>Ants</i>, <i>AntHill</i>, <i>Pheromon</i> und <i>Food</i>-Klasse in unserer Welt. Da die Ameisen immer aus ihrem Ameisenhügel spawnen sollen, legen wir die Koordinaten der Ameisenhügel mithilfe des Befehls <i>addObject</i> fest. Die Methode <i>addObject</i> benötigt bestimmte Parameter für ihre Funktionalität. Zu diesen zählt zum Einen die Bezeichnung des zu generierenden Objektes einer Klasse und seine Position in der Welt. Hierzu wird nach addObject in Klammern die jeweilige Klasse mit dem Aufdruck new davor genannt, welcher als Referenz festlegt, dass ein Objekt dieser Klasse hinzugefügt werden soll. Schließlich geben zwei Parameter, durch Kommata getrennt, die Koordinaten des jeweiligen Objekts an. Diese Koordinaten haben wir so gewählt, dass die Ameisenhügel jeweils ein bisschen auseinander liegen. Außerdem sollen zu Beginn Futterhaufen für die Ameisen vorhanden sein. Diese haben wir so gewählt, dass sie etwas auseinander und auf der ganzen Karte verteilt liegen. Es sollten außerdem nicht zu wenige Futterhaufen sein, da die Ameisen diese sonst zu schnell leeren.
 
 ```javascript
 
@@ -234,32 +238,72 @@ import greenfoot.*;
 
 public static final int WORLDSIZE = 640;
 public AntWorld()
-    {
-        super(WORLDSIZE, WORLDSIZE, 1,false);
-        setPaintOrder(AntWorld.class, Ant.class);
-        scenario1();
-    }
-    public void scenario1()
-    {
-        addObject(new AntHill(), WORLDSIZE / 2, WORLDSIZE / 2);
-        addObject(new AntHill(), WORLDSIZE / 4, WORLDSIZE / 4);
-        addObject(new Food(), 200, 200);
-        addObject(new Food(), 50, 50);
-        addObject(new Food(), 300, 50);
-        addObject(new Food(), 500, 200);
-        addObject(new Food(), 300, 275);
-        addObject(new Food(), 300, 350);
-        addObject(new Food(), 350, 400);
-        addObject(new Food(), 150, 400);
-        addObject(new Food(), 400, 550);
-        addObject(new Food(), 550, 500);
-        }
-       
+{
+    super(WORLDSIZE, WORLDSIZE, 1,false);
+    setPaintOrder(AntWorld.class, Ant.class);
+    scenario1();
+}
+public void scenario1()
+{
+    addObject(new AntHill(), WORLDSIZE / 2, WORLDSIZE / 2);
+    addObject(new AntHill(), WORLDSIZE / 4, WORLDSIZE / 4);
+    addObject(new Food(), 200, 200);
+    addObject(new Food(), 50, 50);
+    addObject(new Food(), 300, 50);
+    addObject(new Food(), 500, 200);
+    addObject(new Food(), 300, 275);
+    addObject(new Food(), 300, 350);
+    addObject(new Food(), 350, 400);
+    addObject(new Food(), 150, 400);
+    addObject(new Food(), 400, 550);
+    addObject(new Food(), 550, 500);
+}
 ```
  
  <h3>
 <a id= "Die Creature-Klasse"> 2.2 Die Creature-Klasse</a>
 </h3>
+
+<p>
+Die <i>Creature</i>-Klasse ist die Oberklasse der Ameinsen (<i>Ants</i>). Ihre Methoden werden an die Ameisen-Klasse vererbt. Methoden in der <i>Creature</i>-Klasse lassen sich deshalb von den Ameisen anrufen. Das Erstellen von einer Hierarchie innerhalb der Klassen hilft dabei, den Code des Szenarios übersichtlicher zu gestalten. Die Geschwindigkeit der Ameisen soll zufällig sein, jedoch sollen die Ameisen nicht stehen bleiben. Wir haben dazu die Methode <i>Speed()</i> erstellt die eine zufällige Zahl zwischen 1 und 4 durch eine Integre-Variable names <i>SPEED</i> zurückgibt. Hierfür haben wir eine <i>Greenfoot.getRandomNumber()</i>-Methode verwendet, die eine zufällige Zahl zwischen 0 und dem, als Parameter angegebenen Grenzwert, generiert.
+</p>
+
+```javascript
+public int Speed()
+{
+    return SPEED = Greenfoot.getRandomNumber(4) + 1;
+}
+```
+
+<p>
+Eine weitere Methode <i>TurnAround()</i> gibt mithilfe einer weiteren <i>Greenfoot.getRandomNumber()</i>-Methode eine Variable names <i>TURN</i> zurück, die durch die Addition von 30 Wert zwischen 30 und 49 zurückgeben kann.
+</p>
+
+```javascript
+private int TurnAround()
+{
+    return TURN = Greenfoot.getRandomNumber(20) + 30;
+}
+```
+<p>
+Zusätzlich benötigen wir eine Methode, die bei einer bestimmten prozentualen Chance den booleschen Literal <i>true</i> zurückgibt. Der Parameter dieser Methode definiert dabei die Chance. Der Rückgabetyp ist boolesch, kann also zwei Zustände annehmen. Der Parameter lässt sich durch einen Integre darstellen, der kleiner als 100 (100%) sein muss, damit <i>true</i> zurückgegeben wird. Hierzu haben wir mithilfe einer if-Methode festgelegt, dass wenn eine zufällige Zahl zwischen 0 und 99 (siehe <i>Greenfoot.getRandomNumber(100)</i>) kleiner ist die Variable <i>chance</i>, so wird der boolesche Ausdruck <i>true</i> zurückgegeben. Die Variable <i>chance</i> wird dabei beim Verwenden der Methode als Parameter in Klammern angegeben. Ist die if-Methode nicht erfüllt wird stattdessen der Klammerrumpf der else-Methode ausgeführt, der den Befehl enthält, den Ausdrck <i>false</i> zurückzugeben.
+</p>
+
+```javascript
+public boolean randomChance(int chance)
+{
+    if (Greenfoot.getRandomNumber(100) < chance)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+```
+
+Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance<i/> werden in der Methode <i>searchForFood()</i> benötigt, umm eine zufällige Fortbewegunsg zu simulieren. 
 
 <h4>
 <a id="Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a>
@@ -371,5 +415,7 @@ Bei unserem Projekt sind wir schon recht weit gekommen. Das Szenario funktionier
 <a id= "Quellen"> 4. Quellen</a>
 </h3>
 
-- Michael Kölling: *Einführung in Java mit Greenfoot*. Pearson Education Deutschland GmbH, 2010
-- Download: Greenfoot AntsProject
+<ul>
+<li>Michael Kölling: *Einführung in Java mit Greenfoot*. Pearson Education Deutschland GmbH, 2010</li>
+<li>Download: Greenfoot AntsProject</li>
+</ul>
