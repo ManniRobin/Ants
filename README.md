@@ -6,7 +6,7 @@ Ants
 Ein Informatik-Projekt von Robin Wagner und Finn Westphal
 </h2>
 
-<p><img src="images/Screenshot (1).png" alt="Screenshot1"></p>
+<p><img src="images/Screenshot (2).png" alt="Screenshot2"></p>
 
 <ul>
     <li><a href= "#Einleitung"> 1. Einleitung: Anforderungen und Elemente des Spiels</a></li>
