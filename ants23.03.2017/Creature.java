@@ -13,18 +13,6 @@ public class Creature extends Actor
     private int ChromaticSign = Greenfoot.getRandomNumber(2);
     private int Rotation = Greenfoot.getRandomNumber(30);
     
-    private AntHill home;
-    
-    public void setHomeHill(AntHill homeHill)
-    {
-        home = homeHill;
-    }
-    
-    public AntHill getHomeHill()
-    {
-        return home;
-    }
-    
     public int Speed()
     {
         return SPEED = Greenfoot.getRandomNumber(4) + 1;
@@ -32,7 +20,7 @@ public class Creature extends Actor
     
     public void searchForFood()
     {
-        moveRandomSpeed();
+        move(Speed());
         if (randomChance(50))
         {
             if (ChromaticSign == 0)
@@ -42,11 +30,6 @@ public class Creature extends Actor
                 turn(-TurnAround());
                 ChromaticSign = Greenfoot.getRandomNumber(2);
         }
-    }
-    
-    public void moveRandomSpeed()
-    {
-        move(Speed());
     }
     
     public boolean randomChance(int chance)

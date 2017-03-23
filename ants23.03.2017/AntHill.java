@@ -39,9 +39,9 @@ public class AntHill extends Actor
     {
         if(ants < maxAnts)
         {
-            if(Greenfoot.getRandomNumber(100) < 10)
+            if(Greenfoot.getRandomNumber(100) < 5)
             {
-                getWorld().addObject(new Ant(this), getX(), getY());
+                getWorld().addObject(new Ant(), getX(), getY());
                 ants++;
             }
         }

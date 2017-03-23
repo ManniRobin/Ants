@@ -1,18 +1,12 @@
 #BlueJ class context
 comment0.target=Creature
 comment0.text=\r\n\ An\ ant\ that\ collects\ food.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\r\n\ @version\ 0.1\r\n
-comment1.params=homeHill
-comment1.target=void\ setHomeHill(AntHill)
+comment1.params=
+comment1.target=int\ Speed()
 comment2.params=
-comment2.target=AntHill\ getHomeHill()
-comment3.params=
-comment3.target=int\ Speed()
+comment2.target=void\ searchForFood()
+comment3.params=chance
+comment3.target=boolean\ randomChance(int)
 comment4.params=
-comment4.target=void\ searchForFood()
-comment5.params=
-comment5.target=void\ moveRandomSpeed()
-comment6.params=chance
-comment6.target=boolean\ randomChance(int)
-comment7.params=
-comment7.target=int\ TurnAround()
-numComments=8
+comment4.target=int\ TurnAround()
+numComments=5

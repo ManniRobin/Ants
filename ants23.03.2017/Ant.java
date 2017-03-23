@@ -20,29 +20,26 @@ public class Ant extends Creature
     private int i;
     private boolean foundFood = false;
     
-    public Ant(AntHill home)
-    {
-        setHomeHill(home);
-    }
-    
     public Ant()
     {
+        getHomeLocationX();
+        getHomeLocationY();
     }
     
     public void act()
     {
-        getHomeLocationX();
-        getHomeLocationY();
-        if (checkForFood() && foundFood == true)
+        if (foundFood == false)
+        {
+            searchForFood();
+        }
+        if (checkForFood() || foundFood == true)
         {
             getHome();
-            if (atHome())
-            {
-                searchForFood();
-            }
         }
-        else
+        if (atHome())
         {
+            foundFood = false;
+            setImage("ant.gif");
             searchForFood();
         }
     }
@@ -62,7 +59,7 @@ public class Ant extends Creature
         }
     }
     
-        private void takeCrumbs(Food getFood)
+    private void takeCrumbs(Food getFood)
     {
         getFood.takeSomeCrumbs();
         setImage("ant-with-food.gif");
@@ -70,44 +67,42 @@ public class Ant extends Creature
     
     private int getHomeLocationX()
     {
-        if (i == 0)
+        if (i == 1)
         {
-            i = 1;
             xCoordinate = getX() + 0;
+            i = i + 1;
         }
         return 320;
     }
     
     private int getHomeLocationY()
     {
-        if (i == 0)
+        if (i == 1)
         {
-            i = 1;
             yCoordinate = getY() + 0;
+            i = i + 1;
         }
         return 320;
     }
     
     public void getHome()
     {
-        deltaX = getX() - getHomeLocationY();
-        deltaY = getY() - getHomeLocationX();
+        deltaX = getX() - getHomeLocationX();
+        deltaY = getY() - getHomeLocationY() ;
         foundFood = true;
-        
         if (deltaX != 0 || deltaY != 0)
         {
             Angle = Math.atan2(-deltaY, -deltaX) * (180 / Math.PI);
             int angle = (int)Angle;
-            setRotation(90);
+            setRotation(angle);
         }
-        move(3);
+        move(Speed());
     }
     
     public boolean atHome()
     {
-        if (getX() == 320 && getY() == 320)
+        if (getX() == xCoordinate && getY() == yCoordinate)
         {
-            setImage("ant.gif");
             return true;
         }
         else

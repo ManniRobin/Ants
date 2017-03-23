@@ -17,16 +17,18 @@ public class AntWorld extends World
     public AntWorld()
     {
         super(WORLDSIZE, WORLDSIZE, 1);
-        setPaintOrder(AntWorld.class, Ant.class);
+        setPaintOrder(Ant.class, AntHill.class);
         scenario1();
     }
     public void scenario1()
     {
         removeObjects(getObjects(null));
         addObject(new AntHill(), 320, 320);
-        addObject(new Food(), 320, 240);
-        addObject(new Food(), 320, 380);
-        addObject(new Food(), 260, 320);
-        addObject(new Food(), 380, 320);
+        addObject(new Food(), 250, 50);
+        addObject(new Food(), 400, 150);
+        addObject(new Food(), 180, 380);
+        addObject(new Food(), 200, 250);
+        addObject(new Food(), 520, 320);
+        addObject(new Food(), 550, 550);
     }
 }
