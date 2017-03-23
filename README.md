@@ -30,8 +30,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
            <li><a href= "#Code-Zusammenfassung Die Ants-Klasse"> 2.3.1 Code-Zusammenfassung</a></li>
            </ul>
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
-    <li><a href= "#Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a></li>
-    <li><a href= "#Die Food-Klasse"> 2.6 Die Food-Klasse</a></li>
+    <li><a href= "#Die Food-Klasse"> 2.5 Die Food-Klasse</a></li>
     </ul>
     <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
 <li><a href= "#Quellen"> 4. Quellen</a></li>
@@ -190,13 +189,7 @@ public AntWorld()
 <p><img src="images/anthill.png" alt="anthill"></p>
 
 <h3>
-<a id= "Die Pheromon-Klasse"> 2.5 Die Pheromon-Klasse</a>
-</h3>
-
-<p><img src="images/Pheromone.png" alt="Pheromone"></p>
-
-<h3>
-<a id= "Die Food-Klasse"> 2.6 Die Food-Klasse</a>
+<a id= "Die Food-Klasse"> 2.5 Die Food-Klasse</a>
 </h3>
 
 <p><img src="images/Food.png" alt="food"></p>
@@ -228,17 +221,25 @@ Die übrige Zeit haben wir genutzt, um zunächst das Projekt zu verstehen: Die A
 Mittwoch, den 08.03.2017:
 </h4>
 
+Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird.
+
 <h4>
 Donnerstag, den 09.03.2017:
 </h4>
+
+Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst...
 
 <h4>
 Samstag, den 11.03.2017:
 </h4>
 
+Nachdem wir mit der Creature und der Ant Klasse schon zwei Klassen zuende programmiert hatten, haben wir begonnen, die Dokumentation anzufertigen. Dazu haben wir in Github ein neues repository erstellt und zunächst ein Inhaltsverzeichnis mit den wichtigen Punkten angefertigt. Anschließend haben wir eine Einleitung geschrieben, die das Ants Projekt darstellt, und die Syntax und Funktionsweise von Java genauer erklärt. Auch die Welt als Klasse mit ihren Befehlen haben wir erklärt.
+
 <h4>
 Dienstag, den 14.03.2017:
 </h4>
+
+Am Dienstag haben wir 
 
 <h4>
 Donnerstag, den 16.03.2017:
