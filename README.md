@@ -239,18 +239,26 @@ Nachdem wir mit der Creature und der Ant Klasse schon zwei Klassen zuende progra
 Dienstag, den 14.03.2017:
 </h4>
 
-Am Dienstag haben wir 
+Am Dienstag haben wir dann die einzelnen Klassen ins Inhaltsverzeichnis hinzugefügt und mithilfe von Github Desktop, was wir vorher downloaden mussten, die einzelnen Bilder der Klassen hinzugefügt, indem wir vorher einen Ordner images mit allen Bildern drin erstellt hatten.
 
 <h4>
 Donnerstag, den 16.03.2017:
 </h4>
 
+Die Doppelstunde haben wir genutzt, um die Food-Klasse zu programmieren. Dabei haben wir uns zunächst die Seite im Greenfoot Buch genau durchgelesen und sind nach den Aufgaben des Buches vorgegangen. Uns war wichtig, dass das Futter aus vielen einzelnen Krümeln besteht und normalverteilt ist, da das Futter sonst unecht erscheinen würde.
+
 <h4>
 Sonntag, den 19.03.2017:
 </h4>
 
+
+
 <h4>
 Dienstag, den 21.03.2017:
+</h4>
+
+<h4>
+Mittwoch, den 22.03.2017:
 </h4>
 
 <h4>
