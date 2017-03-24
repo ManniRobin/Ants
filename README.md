@@ -13,6 +13,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         <ul>
         <li><a href= "#Das Spiel und die Dokumentation"> 1.1 Das Spiel und die Dokumentation</a></li>
         <li><a href= "#Syntax und Funktionsweise von Java"> 1.2 Syntax und Funktionsweise von Java</a></li>
+        <li><a href= "#Verwendete Methoden"> 1.3 Verwendete Methoden</a></li>
         </ul>
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
@@ -31,8 +32,11 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
            </ul>
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.5 Die Food-Klasse</a></li>
-    </ul>
-    <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
+   <ul>
+   <li><a href= "#Code-Zusammenfassung Die Food-Klasse"> 2.5.1 Code-Zusammenfassung</a></li>
+   </ul>
+   </ul>
+ <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
 <li><a href= "#Quellen"> 4. Quellen</a></li>
 </ul>
 
@@ -303,9 +307,7 @@ public boolean randomChance(int chance)
 }
 ```
 
-<p>
-Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance</i> werden in der Methode <i>searchForFood()</i> benötigt, um eine zufällige Fortbewegung zu simulieren. Die Ameisen "suchen" ohne Aufschluss über den Aufenthaltsort des Futters zu haben zufällig das Szenario. Deshalb haben wir diese Methode <i>searchForFood()</i> genannt. Damit die Ameisen eine Geschwindigkeit aufweisen, haben wir die Variable <i>SPEED</i> der Methode <i>Speed</i> in eine <i>move()</i>-Methode eingesetzt. Die Ameisen sollen mit einer Chance von 50% ihre Ausrichung verändern und sich damit in eine zufällige Richtung bewegen. Dazu haben wir eine if-Methode erstellt, deren Bedingung erfüllt ist, wenn die Methode <i>randomChance</i> mit dem Parameter chance = 50 ist. Es besteht also eine 50%-ige Chance, dass der Parameter <i>true</i> zurückgeben wird und damit die Bedingung erfüllt ist. Innerhalb der if-Methode haben wir zwei weitere if-Methoden definiert. Ihre Bedingungen sind jeweils die beiden Zustände, die die Variable <i>ChromaticSign</i> annhemen kann. Die inneren if-Methoden setzen jeweils die Variable <i>TURN</i> der Methode <i>TurnAround</i> in eine <i>turn</i>-Methode ein, sodass sich die Ameisen  zufällig um die eingene Achse drehen können. Die beiden if-Methoden unterscheiden sich lediglich duch die beiden Zustände von <i>ChromaticSign</i>, welche bewirken, dass eine Ausrichung gegen und mit dem Uhrzeigersinn möglich ist, da sich das Vorzeichen der beiden if-Methoden  vor <i>TurnAround</i> unterscheidet. Ist eine der inneren if-Methoden ausgeführt worden, muss <i>ChromaticSign</i> neu festgelegt werden, weil sie sonst nur einmalig festgelegt wird, was durch die zusetzliche Zeile <i>ChromaticSign = Greenfoot.getRandomNumber(2)</i> erreicht wird. Zusammengefasst wird durch <i>randomChance(50)</i> ein zufälliger Richutungswechsel definiert, der durch die Variable <i>ChromaticSign</i> nach rechts und links möglich ist.
-</p>
+Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance<i/> werden in der Methode <i>searchForFood()</i> benötigt, umm eine zufällige Fortbewegunsg zu simulieren. 
 
 <h4>
 <a id="Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a>
@@ -335,6 +337,11 @@ Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance</i> werden in der Met
 
 <p><img src="images/Food.png" alt="food"></p>
 
+<h4>
+<a id="Code-Zusammenfassung Die Food-Klasse"> 2.5.1 Code-Zusammenfassung</a>
+</h4>
+
+
 <h3>
 <a id= "Stundenübersicht"> 3. Stundenübersicht</a>
 </h3>
@@ -362,13 +369,13 @@ Die übrige Zeit haben wir genutzt, um zunächst das Projekt zu verstehen: Die A
 Mittwoch, den 08.03.2017:
 </h4>
 
-Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird.
+Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird. Angefangen haben wir z.B. mit der Festlegung einer zufälligen Geschwindigkeit der Ameisen, die in der Creature Klasse festgelegt wird.
 
 <h4>
 Donnerstag, den 09.03.2017:
 </h4>
 
-Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst...
+Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst das Zuhause der Ameisen als Ameisenhaufen (Anthill) definiert und das Suchen nach Futter programmiert.
 
 <h4>
 Samstag, den 11.03.2017:
