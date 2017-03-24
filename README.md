@@ -13,6 +13,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         <ul>
         <li><a href= "#Das Spiel und die Dokumentation"> 1.1 Das Spiel und die Dokumentation</a></li>
         <li><a href= "#Syntax und Funktionsweise von Java"> 1.2 Syntax und Funktionsweise von Java</a></li>
+        <li><a href= "#Verwendete Methoden"> 1.3 Verwendete Methoden</a></li>
         </ul>
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
@@ -360,13 +361,13 @@ Die übrige Zeit haben wir genutzt, um zunächst das Projekt zu verstehen: Die A
 Mittwoch, den 08.03.2017:
 </h4>
 
-Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird.
+Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird. Angefangen haben wir z.B. mit der Festlegung einer zufälligen Geschwindigkeit der Ameisen, die in der Creature Klasse festgelegt wird.
 
 <h4>
 Donnerstag, den 09.03.2017:
 </h4>
 
-Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst...
+Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst das Zuhause der Ameisen als Ameisenhaufen (Anthill) definiert und das Suchen nach Futter programmiert.
 
 <h4>
 Samstag, den 11.03.2017:
