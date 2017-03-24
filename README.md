@@ -13,6 +13,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         <ul>
         <li><a href= "#Das Spiel und die Dokumentation"> 1.1 Das Spiel und die Dokumentation</a></li>
         <li><a href= "#Syntax und Funktionsweise von Java"> 1.2 Syntax und Funktionsweise von Java</a></li>
+        <li><a href= "#Verwendete Methoden"> 1.3 Verwendete Methoden</a></li>
         </ul>
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
