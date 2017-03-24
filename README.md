@@ -13,6 +13,7 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
         <ul>
         <li><a href= "#Das Spiel und die Dokumentation"> 1.1 Das Spiel und die Dokumentation</a></li>
         <li><a href= "#Syntax und Funktionsweise von Java"> 1.2 Syntax und Funktionsweise von Java</a></li>
+        <li><a href= "#Verwendete Methoden"> 1.3 Verwendete Methoden</a></li>
         </ul>
     <li><a href= "#Umsetzung"> 2. Umsetzung</a></li>
         <ul>
@@ -31,8 +32,11 @@ Ein Informatik-Projekt von Robin Wagner und Finn Westphal
            </ul>
     <li><a href= "#Die AntHill-Klasse"> 2.4 Die AntHill-Klasse</a></li>
     <li><a href= "#Die Food-Klasse"> 2.5 Die Food-Klasse</a></li>
-    </ul>
-    <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
+   <ul>
+   <li><a href= "#Code-Zusammenfassung Die Food-Klasse"> 2.5.1 Code-Zusammenfassung</a></li>
+   </ul>
+   </ul>
+ <li><a href= "#Stundenübersicht"> 3. Stundenübersicht</a></li>
 <li><a href= "#Quellen"> 4. Quellen</a></li>
 </ul>
 
@@ -303,9 +307,7 @@ public boolean randomChance(int chance)
 }
 ```
 
-<p>
-Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance</i> werden in der Methode <i>searchForFood()</i> benötigt, um eine zufällige Fortbewegung zu simulieren. Die Ameisen "suchen" ohne Aufschluss über den Aufenthaltsort des Futters zu haben zufällig das Szenario. Deshalb haben wir diese Methode <i>searchForFood()</i> genannt. Damit die Ameisen eine Geschwindigkeit aufweisen, haben wir die Variable <i>SPEED</i> der Methode <i>Speed</i> in eine <i>move()</i>-Methode eingesetzt. Die Ameisen sollen mit einer Chance von 50% ihre Ausrichung verändern und sich damit in eine zufällige Richtung bewegen. Dazu haben wir eine if-Methode erstellt, deren Bedingung erfüllt ist, wenn die Methode <i>randomChance</i> mit dem Parameter chance = 50 ist. Es besteht also eine 50%-ige Chance, dass der Parameter <i>true</i> zurückgeben wird und damit die Bedingung erfüllt ist. Innerhalb der if-Methode haben wir zwei weitere if-Methoden definiert. Ihre Bedingungen sind jeweils die beiden Zustände, die die Variable <i>ChromaticSign</i> annhemen kann. Die inneren if-Methoden setzen jeweils die Variable <i>TURN</i> der Methode <i>TurnAround</i> in eine <i>turn</i>-Methode ein, sodass sich die Ameisen  zufällig um die eingene Achse drehen können. Die beiden if-Methoden unterscheiden sich lediglich duch die beiden Zustände von <i>ChromaticSign</i>, welche bewirken, dass eine Ausrichung gegen und mit dem Uhrzeigersinn möglich ist, da sich das Vorzeichen der beiden if-Methoden  vor <i>TurnAround</i> unterscheidet. Ist eine der inneren if-Methoden ausgeführt worden, muss <i>ChromaticSign</i> neu festgelegt werden, weil sie sonst nur einmalig festgelegt wird, was durch die zusetzliche Zeile <i>ChromaticSign = Greenfoot.getRandomNumber(2)</i> erreicht wird. Zusammengefasst wird durch <i>randomChance(50)</i> ein zufälliger Richutungswechsel definiert, der durch die Variable <i>ChromaticSign</i> nach rechts und links möglich ist.
-</p>
+Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance<i/> werden in der Methode <i>searchForFood()</i> benötigt, umm eine zufällige Fortbewegunsg zu simulieren. 
 
 <h4>
 <a id="Code-Zusammenfassung Die Creature-Klasse"> 2.2.1 Code-Zusammenfassung</a>
@@ -335,6 +337,82 @@ Die Methoden <i>Speed</i>, <i>Turn</i> und <i>randomChance</i> werden in der Met
 
 <p><img src="images/Food.png" alt="food"></p>
 
+Bei der Programmierung der Food Klasse mussten wir zunächst ein Bild erstellen, da wir kein fertiges Bild haben wollten, sondern eines, das eine bestimmte Anzahl an Krümeln hat und normalverteilt sein soll, sodass es relativ echt aussieht. Mithilfe vom integer konnten wir die Krümel auf eine Anzahl von 100 Bildern festlegen, die Bildgröße konnten wir ebenfalls mit private int auf eine bestimmte quadratische Größe festlegen, in unserem Fall 30 Pixel. Wir haben zwei neue Farben unzwar limettengrün und dunkelgrün als eine neue Farbe festgelegt, welche das Futter annimmt. Zusätzlich haben wir die Variable i festgelegt bzw. in die Klasse hinzugefügt und einen test gemacht und diesen =0 gesetzt. Jetzt haben wir eine Grundlage für das Bild des Futterhaufens erstellt. Indem wir nun das Bild mithilfe von updateImage(); aktualisieren, haben wir zum Start des Szenarios neue Futterhaufen an den Plätzen, an denen wir sie zur Welt hinzugefügt haben. Die Ameisen können allerdings noch kein Futter aufnehmen bzw. ein paar Krümel fressen. Mit dem Befehl public void takeSomeCrumbs() lässt sich sagen, dass die Ameisen grundsätzlich Futter aufnehmen können. Die Krümel werden dann als Krümel -1 definiert. Wenn es 0 oder weniger Krümel gibt, soll der Futterhaufen aus der Welt entfernt werden (removeObject), ansonsten soll das Bild weiter aktualisiert werden. Danach erstellen wir ein neues Greenfoot-Bild und setzen i=0, wobei i immer kleiner als die Krümelanzahl sein muss, da der Krümelhaufen sonst aus der Welt entfernt wird. Das neu erstellte Bild bekommt nun mit integer festgelegt zufällige X- und Y-Koordinaten und mithilfe von setColor auch wieder die gleichen Farben limegrün und dunkelgrün. Schließlich kann man die Variable i als i+1 festlegen und das Bild erneut aktualisieren, sodass die einzelnen Krümel und Krümelverluste sichtbar werden können. Das Bild des Futterhaufens wird kleiner dadurch, dass man eine Koordinate festlegt, die genau die Hälfte des Futterhaufens also 30/2 = 15 Pixel groß ist und nach Gauss normalverteilt ist, sodass sich in der Mitte die meisten Krümel befinden. Wenn die Koordinate kleiner als 0 ist, wird sie wieder auf 0 zurückgesetzt. Wenn sie allerdings größer ist als die Bildgröße - 2 Einheiten, dann wird das Bild in der Größe um 2 kleiner. So kann das Futterbild mit der Zeit immer mehr an Größe verlieren, bis es schließlich ganz verschwindet. Wenn das Bild nicht verkleinert wird, wird die Koordinate einfach zurückgesetzt und der ganze Prozess geht von vorne los.
+
+<h4>
+<a id="Code-Zusammenfassung Die Food-Klasse"> 2.5.1 Code-Zusammenfassung</a>
+</h4>
+
+import greenfoot.*;
+import java.util.Random;
+
+public class Food extends Actor
+{
+    public int Crumbs = 100;
+    private int ImageSize = 30;
+    private Color limegreen = new Color(50, 205, 50);
+    private Color darkgreen = new Color(0, 100, 0);
+    private int i;
+    private int test = 0;
+    
+    public Food()
+    {
+        updateImage();
+    }
+    
+    public void act()
+    {
+        
+    }
+    
+    public void takeSomeCrumbs()
+    {
+        Crumbs = Crumbs - 1;
+        if (Crumbs <= 0)
+        {
+            getWorld().removeObject(this);
+        }
+        else
+        {
+            updateImage();
+        }
+    }
+    
+    public void updateImage()
+    {
+        GreenfootImage image = new GreenfootImage(ImageSize, ImageSize);
+        i = 0;
+        while (i<Crumbs)
+        {
+            int x = randomCoord();
+            int y = randomCoord();
+            image.setColorAt(x, y, limegreen);
+            image.setColorAt(x + 1, y, darkgreen);
+            image.setColorAt(x, y + 1, darkgreen);
+            image.setColorAt(x + 1, y + 1, darkgreen);
+            i = i + 1;
+        }
+        setImage(image);
+    }
+    
+    private int randomCoord()
+    {
+        int coordinate = ImageSize / 2 + (int) (new Random().nextGaussian() * (ImageSize / 4));
+        if (coordinate < 0)
+        {
+            return 0;
+        }
+        if(coordinate > ImageSize - 2)
+        {
+            return ImageSize - 2;
+        }
+        else
+        {
+            return coordinate;
+        }
+    }
+}
+
 <h3>
 <a id= "Stundenübersicht"> 3. Stundenübersicht</a>
 </h3>
@@ -362,13 +440,13 @@ Die übrige Zeit haben wir genutzt, um zunächst das Projekt zu verstehen: Die A
 Mittwoch, den 08.03.2017:
 </h4>
 
-Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird.
+Am Mittwoch haben wir uns mit der recht komplizierten Creature Klasse vertraut gemacht und angefangen, den Code zu vereinfachen bzw. so umzuschreiben, dass er einfacher und verständlicher wird. Angefangen haben wir z.B. mit der Festlegung einer zufälligen Geschwindigkeit der Ameisen, die in der Creature Klasse festgelegt wird.
 
 <h4>
 Donnerstag, den 09.03.2017:
 </h4>
 
-Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst...
+Wir haben das Programmieren der Creature Klasse abgeschlossen und angefangen, die von der Creature Klasse abhängige Ameisen (Ant) Klasse zu programmieren. Dazu haben wir zunächst das Zuhause der Ameisen als Ameisenhaufen (Anthill) definiert und das Suchen nach Futter programmiert.
 
 <h4>
 Samstag, den 11.03.2017:
